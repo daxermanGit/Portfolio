@@ -1,0 +1,10 @@
+/* Define variable defaults */
+$body-bg: #000000;
+$body-color: #0F1C37;
+$spacer: 2.5rem;
+
+ /* Then import Bootstrap and BootstrapVue SCSS files (order is important) */
+ @import 'node_modules/bootstrap/scss/bootstrap.scss';
+ @import 'node_modules/bootstrap-vue/src/index.scss';
+ @import url('https://fonts.cdnfonts.com/css/do-futuristic');
+
