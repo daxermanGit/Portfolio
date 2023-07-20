@@ -13,16 +13,7 @@ import { useStore } from 'vuex';
         name:'TabComponent',
         data(){
         },
-        computed:{
-            options(){
-                return this.$store.state.options;
-            },
-        },
         methods:{
-            setDefaultRight(value){
-                this.$store.commit("setOptionRight", this.options[value][0]);
-                console.log(this.options[value][0]);
-            },
             setSelectedLeft(value){
 
                 value = value[0].toUpperCase() + value.substring(1);
@@ -30,9 +21,7 @@ import { useStore } from 'vuex';
                 // const store = useStore();
                 this.$store.commit("setOptionLeft", value);
                 //leftSelected.setOption(value);
-                this.setDefaultRight(value);
             }
-            
         }
         }
 </script>

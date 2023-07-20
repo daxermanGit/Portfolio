@@ -17,15 +17,14 @@
 
     export default {
         name: "Rightbar",
-        //obtain from vuex optionLeft state
         computed:{
             optionLeft(){
             return this.$store.state.optionLeft;
             },
-
         },
         methods:{
             setSelectedRight(value){
+
                 value = value[0].toUpperCase() + value.substring(1);
                 this.$store.commit("setOptionRight", value);
 

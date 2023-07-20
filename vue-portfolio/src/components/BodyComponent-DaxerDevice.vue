@@ -6,9 +6,9 @@
                     <div class="col-9">
                         <div class="top d-flex ">
                             <img class="frame-border top-left" src="../assets/top-left.svg" alt="Top Left SVG" />
-                            <blockquote class=" mx-1 mt-3 blockquote">
-                                <span class="mb-0 font-weight-bold name">{{this.optionLeft}}</span><span id="cursor" v-show="showCursor"></span>
-                                <p class=" title_ocupation">{{this.optionRight}}</p>
+                            <blockquote class=" m-4 blockquote">
+                                <span class="mb-0 font-weight-bold name">Tittle</span><span id="cursor" v-show="showCursor"></span>
+                                <p class=" title_ocupation">subtittle</p>
                             </blockquote>
                         </div>
                         <ContentComponent />
@@ -27,15 +27,6 @@ import ContentComponent from './ContentComponent.vue';
 import Rightbar from './Rightbar.vue';
     export default {
        name:'BodyComponent',
-       computed:{
-        //obtain from vuex optionLeft and optionRight states
-            optionLeft(){
-            return this.$store.state.optionLeft;
-            },
-            optionRight(){
-            return this.$store.state.optionRight;
-            },
-        },
        components:{
         ContentComponent,
         Rightbar
